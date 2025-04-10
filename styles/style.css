@@ -1,0 +1,95 @@
+.page {
+  font-family: "Plata", Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  inline-size: 1920px;
+}
+
+.logo {
+  display: block;
+  inline-size: 256px;
+  font-family: "Plata", Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: 3%;
+  line-height: 150%;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: min-content 1fr 763px;
+  margin-block-start: 35px;
+  padding: 0 0 0 155px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  padding-left: 100px;
+}
+
+.hero {
+  margin-block-start: 90px;
+  grid-column: 1 / 3;
+}
+
+.hero__title {
+  font-family: "Plata", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  margin-block-start: 140px;
+  line-height: 120%;
+  margin-block-end: 0;
+}
+
+.hero__discreption {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  line-height: 120%;
+  margin-block-start: 20px;
+}
+
+.hero__title span {
+  display: block;
+}
+
+.hero__list {
+  margin-block-start: -10px;
+}
+
+.hero__item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  list-style: none;
+  text-transform: lowercase;
+  margin-block-start: 10px;
+}
+
+.header-image {
+  width: 50px;
+  grid-column: 4 / auto;
+}
+
+.hero__item span {
+  font-family: "Plata", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  letter-spacing: 4%;
+  line-height: 150%;
+  vertical-align: -5px;
+}
+
+.buttun-order {
+  width: 191px;
+  height: 96px;
+  margin-block-start: 15px;
+  font-size: 24px;
+  letter-spacing: 4%;
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
