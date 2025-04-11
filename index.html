@@ -6,7 +6,7 @@
     <title>Lorem</title>
     <link rel="stylesheet" href="/fonts/fonts.css" />
     <link rel="stylesheet" href="/styles/variables.css" />
-    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/animations.css" />
 </head>
@@ -20,6 +20,8 @@
                 <li class="nav__item">Eiusmod tempor</li>
             </ul>
         </nav>
+    </header>
+    <main class="main">
         <section class="hero">
             <img src="/image/header-image.jpg" alt="" class="header-image">
             <h1 class="hero__title">Lorem ipsum <span>dolor sit amet</span></h1>
@@ -29,14 +31,35 @@
                 <li class="hero__item"><span>30%</span> sed do eiusmod tempor</li>
                 <li class="hero__item">Do <span>17%</span> adipiscing elit sed do</li>
             </ul>
-            <button class="buttun-order">Order</button>
-            
+            <button class="buttun-order btn">Order</button>
         </section>
-    </header>
-    <main class="main">
-        
-        <section class="features"></section>
-        <section class="contact"></section>
+        <section class="features">
+            <img src="/image/main-image-2.jpg" alt="">
+            <div class="features__container">
+                <ul class="features__list">
+                    <li class="features__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor </li>
+                    <li class="features__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+                    <li class="features__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+                    <li class="features__item">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
+                </ul>
+                <button class="features__button btn">Order</button>
+            </div>
+            <img src="/image/main-image.jpg" alt="">
+        </section>
+        <section class="contact">
+            <form class="form">
+                <legend class="legend">Consectetur <span>sed do eiusmod</span></legend>
+                <label for="user-name" hidden>input email</label>
+                <input type="text" name="name" id="user-name" placeholder="Name" class="input text">
+                <label for="user-email" hidden>input email</label>
+                <input type="email" name="email" id="user-email" placeholder="Email" class="input email">
+                <label for="accept" class="privacy">
+                    <input type="checkbox" name="accept" id="accept" class="visually-hidden">
+                    I accept Privacy policy
+                </label>
+                <button class="form__button">Submit form</button>
+            </form>
+        </section>
     </main>
     <footer class="footer"></footer>
 </body>

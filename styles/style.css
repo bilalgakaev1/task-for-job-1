@@ -18,30 +18,32 @@
 }
 
 .header {
-  display: grid;
-  grid-template-columns: min-content 1fr 763px;
-  margin-block-start: 35px;
-  padding: 0 0 0 155px;
+  display: flex;
+  min-height: 58px;
+  padding: 35px 0 0 155px;
+  position: fixed;
+  top: 0;
+  background-color: #222;
+  z-index: 1;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
   gap: 40px;
-  text-transform: lowercase;
   text-transform: uppercase;
   padding-left: 100px;
 }
 
 .hero {
   margin-block-start: 90px;
-  grid-column: 1 / 3;
+  padding: 0 0 50px 155px;
 }
 
 .hero__title {
   font-family: "Plata", Arial, Helvetica, sans-serif;
   font-size: 80px;
-  margin-block-start: 140px;
+  margin-block-start: 320px;
   line-height: 120%;
   margin-block-end: 0;
 }
@@ -58,21 +60,36 @@
 }
 
 .hero__list {
-  margin-block-start: -10px;
+  margin-block-start: 40px;
+  margin-inline-start: 50px;
+}
+
+.hero__item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -55px;
+  width: 39px;
+  height: 37px;
+  background-image: url(/image/check.svg);
+  background-repeat: no-repeat;
 }
 
 .hero__item {
+  position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 110%;
+  margin-inline-start: 15px;
   list-style: none;
   text-transform: lowercase;
   margin-block-start: 10px;
 }
 
 .header-image {
-  width: 50px;
-  grid-column: 4 / auto;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .hero__item span {
@@ -83,13 +100,154 @@
   vertical-align: -5px;
 }
 
-.buttun-order {
-  width: 191px;
-  height: 96px;
-  margin-block-start: 15px;
+.btn {
   font-size: 24px;
   letter-spacing: 4%;
   line-height: 150%;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  color: #222222;
+  background-color: #fff;
+}
+
+.buttun-order {
+  width: 191px;
+  height: 96px;
+  margin-block-start: 30px;
+  margin-inline-start: 6px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  background-color: #282829;
+  padding-block-start: 100px;
+}
+
+.features__container {
+  justify-self: center;
+  align-self: end;
+  align-content: end;
+  width: 614px;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.features__item::before {
+  content: "";
+  width: 58px;
+  height: 47px;
+  left: 0;
+  top: 8px;
+  background-image: url("/image/checkFeatures.png");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.features__item {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 115%;
+  position: relative;
+  padding-inline-start: 77px;
+  font-size: 24px;
+  border-bottom: 1px solid #55565a;
+  margin-block-end: 40px;
+  padding-bottom: 40px;
+}
+
+.features__item:last-child {
+  border-bottom: none;
+  margin-block-end: 0;
+  padding-bottom: 0;
+}
+
+.features__button {
+  width: 100%;
+  height: 78px;
+  margin-block-start: 80px;
+}
+
+.contact {
+  display: grid;
+  width: 1597px;
+  height: 628px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+  background-image: url(/image/person.png), url(/image/backround-person.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.form {
+  display: grid;
+  max-width: 781px;
+  align-self: center;
+  margin-inline-start: 130px;
+}
+
+.legend {
+  font-family: "Plata", Arial, Helvetica, sans-serif;
+  font-size: 54px;
+  line-height: 110%;
+  color: #38535d;
+  margin-block-end: 45px;
+}
+
+.legend span {
+  display: block;
+}
+
+.input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  padding: 14px 14px;
+}
+
+.text {
+  margin-block-end: 13px;
+}
+
+.input::placeholder {
+  padding-left: 38px;
+}
+
+.privacy {
+  position: relative;
+  padding-left: 44px;
+  color: #000;
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 130%;
+  margin-block-start: 26px;
+}
+
+.privacy::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  outline: 1px solid #000;
+  border-radius: 2px;
+}
+
+.privacy:checked {
+  background-color: #000;
+}
+
+.form__button {
+  height: 100px;
+  font-family: inherit;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #282829;
+  margin-block-start: 26px;
 }
