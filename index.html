@@ -11,101 +11,158 @@
     <link rel="stylesheet" href="/styles/animations.css" />
 </head>
 <body class="page">
-    <header class="header">
-        <a href="#" class="logo">Lorem</a>
-        <nav class="nav">
-            <ul class="header__list nav__list">
-                <li class="nav__item">Consectetur</li>
-                <li class="nav__item">Sit amet</li>
-                <li class="nav__item">Eiusmod tempor</li>
-            </ul>
-        </nav>
-    </header>
     <main class="main">
-        <section class="hero">
-            <img src="/image/header-image.jpg" alt="" class="header-image">
-            <h1 class="hero__title">Lorem ipsum <span>dolor sit amet</span></h1>
-            <p class="hero__discreption">sed do eiusmod tempor</p>
-            <ul class="hero__list">
-                <li class="hero__item">Do <span>$10 000</span> consectetur elit</li>
-                <li class="hero__item"><span>30%</span> sed do eiusmod tempor</li>
-                <li class="hero__item">Do <span>17%</span> adipiscing elit sed do</li>
-            </ul>
-            <button class="buttun-order btn">Order</button>
-        </section>
-        <section class="features">
-            <img src="/image/main-image-2.jpg" alt="">
-            <div class="features__container">
-                <ul class="features__list">
-                    <li class="features__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor </li>
-                    <li class="features__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                    <li class="features__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                    <li class="features__item">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                </ul>
-                <button class="features__button btn">Order</button>
+        <section class="section-1">
+            <div class="section-1_info-block">
+                <header>
+                    <a href="/" class="logo">Everwall</a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">About</a>
+                            </li>
+                            <li>
+                                <a href="/">Ecosystem</a>
+                            </li>
+                            <li>
+                                <a href="/">Experienses</a>
+                            </li>
+                            <li>
+                                <a href="/">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="info-block_wrapper"> 
+                    <div class="info-block">
+                        <h3 class="info-block_title">Reconnect with Nature through Future Technology</h3>
+                        <p class="info-block_notice">Experience ultimate serenity in smart eco-homes powered by AI and clean energy</p>
+                        <div class="info-block_footer">
+                            <ul class="info-block_list">
+                                <li>
+                                    <img src="./image/icons/check.svg" alt="Иконка галочки">
+                                    <p>Up to <span>$15 000</span>  in government eco-subsidies</p>
+                                </li>
+                                <li>
+                                    <img src="./image/icons/check.svg" alt="Иконка галочки">
+                                    <p><span>100%</span> off-grid energy with zero emissions</p>
+                                </li>
+                                <li>
+                                    <img src="./image/icons/check.svg" alt="Иконка галочки">
+                                    <p>Mindful living with <span>neural</span>meditation pods</p>
+                                </li>
+                            </ul>
+                            <a href="#order-block">
+                                <button>BOOK A STAY</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img src="/image/main-image.jpg" alt="">
+            <div class="section-1_illustration-block">
+            </div>
         </section>
-        <section class="contact">
-            <form class="form">
-                <legend class="legend">Consectetur <span>sed do eiusmod</span></legend>
-                <label for="user-name" hidden>input email</label>
-                <input type="text" name="name" id="user-name" placeholder="Name" class="input text">
-                <label for="user-email" hidden>input email</label>
-                <input type="email" name="email" id="user-email" placeholder="Email" class="input email">
-                <label for="accept" class="privacy">
-                    <input type="checkbox" name="accept" id="accept" class="visually-hidden">
-                    I accept Privacy policy
-                </label>
-                <button class="form__button">Submit form</button>
-            </form>
+        <section class="section-2">
+            <div class="section-2_left-illustration"></div>
+            <div class="section-2_info-block">
+                <ul>
+                    <li>
+                        <img src="./image/icons/checkFeatures.svg" alt="Иконка фичи">
+                        <p>Experience automated comfort tailored to your habits and emotions</p>
+                    </li>
+                    <li>
+                        <img src="./image/icons/checkFeatures.svg" alt="Иконка фичи">
+                        <p>Live fully disconnected — powered by sun, wind, and stream</p>
+                    </li>
+                    <li>
+                        <img src="./image/icons/checkFeatures.svg" alt="Иконка фичи">
+                        <p>Restore your balance inside smart pods designed by neuroscientists</p>
+                    </li>
+                    <li>
+                        <img src="./image/icons/checkFeatures.svg" alt="Иконка фичи">
+                        <p>Every wall breathes — adapting to light, humidity, and your presence</p>
+                    </li>
+                </ul>
+                <a href="#order-block">
+                    <button>Book a stay</button>
+                </a>
+
+            </div>
+            <div class="section-2_right-illustration"></div>
+        </section>
+        <section id="order-block" class="section-3">
+            <div class="section-3_block">
+                <div class="section-3_block-form">
+                    <h3>Reconnect with Your <br>Natural Rhythm</h3>
+                    <div class="form-group_wrapper"> 
+                        <div class="form-group">
+                            <input type="text" class="input-field" placeholder="Name" required>
+                            <input type="email" class="input-field" placeholder="Email" required>
+                            <span class="keeper"></span>
+                            <span class="error-message">Пожалуйста, введите корректный email</span>
+                        </div>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="checkbox-input">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">I agree with the Privacy Policy</span>
+                        </label>
+                        <button>Request a call</button>
+                    </div>
+                </div>
+                <!--<img src="./image/illustration/person.png" alt="Изображение девушки">-->
+            </div>
         </section>
     </main>
-    <footer class="footer">
-        <ul class="footer__list nav__list">
-            <li class="footer__item">Consectetur</li>
-            <li class="footer__item">Adipiscing</li>
-            <li class="footer__item">tempor</li>
-        </ul>
-        <div class="footer__container">
-            <a href="#" class="logo footer__logo">Lorem</a>
-        <ul class="footer__social">
-            <li>
-                <a href="#">
-                    <img src="/image/instagram.svg" alt="">
+    <footer class="footer-section">
+        <div class="footer-head">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">About</a>
+                    </li>
+                    <li>
+                        <a href="/">Ecosystem</a>
+                    </li>
+                    <li>
+                        <a href="/">Experienses</a>
+                    </li>
+                    <li>
+                        <a href="/">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="/" class="logo">Everwall</a>
+                <div class="footer-social_block">
+                    <ul>
+                        <li><a href="/"><img src="./image/icons/social/instagram.svg" alt=""></a></li>
+                        <li><a href="/"><img src="./image/icons/social/tiktok.svg" alt=""></a></li>
+                        <li><a href="/"><img src="./image/icons/social/in.svg" alt=""></a></li>
+                        <li><a href="/"><img src="./image/icons/social/fc.svg" alt=""></a></li>
+                        <li><a href="/"><img src="./image/icons/social/tg.svg" alt=""></a></li>
+                        <li><a href="/"><img src="./image/icons/social/yt.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <a href="#order-block">
+                    <button>Book a stay</button>
                 </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/image/tiktok.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/image/in.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/image/fc.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/image/tg.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/image/yt.svg" alt="">
-                </a>
-            </li>
-        </ul>
-        <button class="footer__button btn">Order</button>
-        <p class="footer__text">© 2024, Copyright.</p>
-        <p class="footer__text">Privacy policy</p>
-        <p class="footer__text">Terms of Use</p>
+            </div>
+            <div class="footer-documents">
+                <p>© 2025, Все права защищены.</p>
+                <p><a href="/">Политика приватности</a></p>
+                <p><a href="/">Пользовательское соглашение</a></p>
+            </div>
         </div>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
+
