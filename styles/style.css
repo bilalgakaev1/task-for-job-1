@@ -78,6 +78,7 @@ header nav li:hover a, footer nav li:hover a {
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 65px;
+  position: relative;
 }
 .info-block {
   /*max-width: 540px;*/
@@ -353,7 +354,6 @@ header nav li:hover a, footer nav li:hover a {
   width: 20px;
 }
 .info-block_list li p {
-  display: flex;
   align-items: center;
 }
 .info-block_list li span {
@@ -491,7 +491,10 @@ header nav li:hover a, footer nav li:hover a {
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
-  }
+
+    .info-block_wrapper {
+      background-size: cover;
+    }
   
   .checkbox-label {
     color: #fff;
