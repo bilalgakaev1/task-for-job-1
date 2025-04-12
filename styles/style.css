@@ -485,6 +485,14 @@ header nav li:hover a, footer nav li:hover a {
       z-index: 1;
   }
 
+  @media screen and (width <= 450px) {
+    header nav ul, footer nav ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  }
+  
   .checkbox-label {
     color: #fff;
   }
