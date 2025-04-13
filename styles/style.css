@@ -484,6 +484,7 @@ header nav li:hover a, footer nav li:hover a {
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 1;
   }
+}
 
   @media screen and (width <= 450px) {
     header nav ul, footer nav ul {
